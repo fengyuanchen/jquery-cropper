@@ -1,11 +1,11 @@
 /*!
- * jQuery Cropper v1.0.0-alpha
+ * jQuery Cropper v1.0.0-beta
  * https://github.com/fengyuanchen/jquery-cropper
  *
  * Copyright (c) 2018 Chen Fengyuan
  * Released under the MIT license
  *
- * Date: 2018-02-28T13:54:23.767Z
+ * Date: 2018-03-03T04:12:17.906Z
  */
 
 'use strict';
