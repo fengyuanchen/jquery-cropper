@@ -18,7 +18,7 @@ dist/
 
 ## Getting started
 
-### Install
+### Installation
 
 ```shell
 npm install jquery-cropper jquery cropperjs
