@@ -44,9 +44,8 @@
     "compress": "uglifyjs dist/jquery-cropper.js -o dist/jquery-cropper.min.js -c -m --comments /^!/",
     "lint": "eslint src/js --fix",
     "release": "npm run clear && npm run lint && npm run build && npm run compress && npm test",
-    "start": "npm-run-all --parallel watch:*",
-    "test": "karma start test/karma.conf.js",
-    "watch": "rollup -c -m -w"
+    "start": "rollup -c -m -w",
+    "test": "karma start test/karma.conf.js"
   },
   "devDependencies": {
     "@commitlint/cli": "^6.1.3",
