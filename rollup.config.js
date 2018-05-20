@@ -2,28 +2,22 @@ const alias = require('rollup-plugin-alias');
 const babel = require('rollup-plugin-babel');
 const commonjs = require('rollup-plugin-commonjs');
 const nodeResolve = require('rollup-plugin-node-resolve');
+const createBanner = require('create-banner');
 const pkg = require('./package');
 
-const now = new Date();
-const banner = `/*!
- * jQuery Cropper v${pkg.version}
- * https://github.com/${pkg.repository}
- *
- * Copyright (c) ${now.getFullYear()} ${pkg.author.name}
- * Released under the ${pkg.license} license
- *
- * Date: ${now.toISOString()}
- */
-`;
+const banner = createBanner({
+  data: {
+    year: '2018-present',
+  },
+});
 
 module.exports = {
   input: 'src/index.js',
   output: [
     {
       banner,
-      file: 'dist/jquery-cropper.js',
+      file: `dist/${pkg.name}.js`,
       format: 'umd',
-      name: 'Cropper',
       globals: {
         jquery: 'jQuery',
         cropperjs: 'Cropper',
@@ -31,19 +25,18 @@ module.exports = {
     },
     {
       banner,
-      file: 'dist/jquery-cropper.common.js',
+      file: `dist/${pkg.name}.common.js`,
       format: 'cjs',
     },
     {
       banner,
-      file: 'dist/jquery-cropper.esm.js',
-      format: 'es',
+      file: `dist/${pkg.name}.esm.js`,
+      format: 'esm',
     },
     {
       banner,
-      file: 'docs/js/jquery-cropper.js',
+      file: `docs/js/${pkg.name}.js`,
       format: 'umd',
-      name: 'Cropper',
       globals: {
         jquery: 'jQuery',
         cropperjs: 'Cropper',
