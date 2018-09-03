@@ -193,7 +193,6 @@ $(function () {
           console.log(e.message);
         }
       }
-
     }
   });
 
@@ -224,7 +223,6 @@ $(function () {
         $image.cropper('move', 0, 1);
         break;
     }
-
   });
 
   // Import image

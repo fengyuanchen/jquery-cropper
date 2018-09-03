@@ -118,8 +118,8 @@ Please read through our [contributing guidelines](CONTRIBUTING.md).
 
 ## Versioning
 
-Maintained under the [Semantic Versioning guidelines](http://semver.org/).
+Maintained under the [Semantic Versioning guidelines](https://semver.org/).
 
 ## License
 
-[MIT](http://opensource.org/licenses/MIT) © [Chen Fengyuan](http://chenfengyuan.com)
+[MIT](https://opensource.org/licenses/MIT) © [Chen Fengyuan](https://chenfengyuan.com)
