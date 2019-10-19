@@ -7,6 +7,7 @@ const pkg = require('./package');
 
 const banner = createBanner({
   data: {
+    name: 'jQuery Cropper',
     year: '2018-present',
   },
 });
@@ -50,8 +51,6 @@ module.exports = {
     }),
     nodeResolve(),
     commonjs(),
-    babel({
-      plugins: ['external-helpers'],
-    }),
+    babel(),
   ],
 };
