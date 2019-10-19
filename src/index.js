@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import Cropper from 'cropperjs';
 
-if ($.fn) {
+if ($ && $.fn && Cropper) {
   const AnotherCropper = $.fn.cropper;
   const NAMESPACE = 'cropper';
 
