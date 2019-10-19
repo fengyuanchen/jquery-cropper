@@ -1,3 +1,6 @@
+import $ from 'jquery';
+import '../src';
+
 describe('cropper', () => {
   const createImage = () => {
     const container = document.createElement('div');
@@ -15,6 +18,13 @@ describe('cropper', () => {
     expect($.fn.cropper.Constructor).to.be.a('function');
     expect($.fn.cropper.noConflict).to.be.a('function');
     expect($.fn.cropper.setDefaults).to.be.a('function');
+  });
+
+  it('should not initialize the cropper when call the destroy method first', () => {
+    const $image = $(createImage());
+
+    $image.cropper('destroy');
+    expect($image.data('cropper')).to.be.undefined;
   });
 
   it('should remove data after destroyed', () => {
@@ -61,5 +71,16 @@ describe('cropper', () => {
       expect(event.type).to.equal('ready');
       done();
     }).cropper();
+  });
+
+  it('should rollback when call the $.fn.cropper.conflict', () => {
+    const { cropper } = $.fn;
+    const noConflictCropper = $.fn.cropper.noConflict();
+
+    expect(noConflictCropper).to.equal(cropper);
+    expect($.fn.cropper).to.be.undefined;
+
+    // Reverts it for the rest test suites
+    $.fn.cropper = noConflictCropper;
   });
 });
