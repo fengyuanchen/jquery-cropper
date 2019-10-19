@@ -7,9 +7,9 @@
   <meta name="description" content="A jQuery plugin wrapper for Cropper.js.">
   <meta name="author" content="Chen Fengyuan">
   <title>jquery-cropper</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/cropperjs/dist/cropper.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/cropperjs/dist/cropper.css" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -34,7 +34,7 @@
           <a class="nav-link" href="https://github.com/fengyuanchen/jquery-cropper/blob/master/README.md" data-toggle="tooltip" title="View the documentation">Docs</a>
           <a class="nav-link" href="https://github.com/fengyuanchen/jquery-cropper" data-toggle="tooltip" title="View the GitHub project">GitHub</a>
           <a class="nav-link" href="https://fengyuanchen.github.io/cropperjs" data-toggle="tooltip" title="JavaScript image cropper">Cropper.js</a>
-          <a class="nav-link" href="https://fengyuanchen.github.io" data-toggle="tooltip" title="More projects">More</a>
+          <a class="nav-link" href="https://fengyuanchen.github.io" data-toggle="tooltip" title="Explore more projects">Explore</a>
           <a class="nav-link" href="https://chenfengyuan.com" data-toggle="tooltip" title="About the author">About</a>
         </nav>
       </div>
@@ -46,12 +46,12 @@
     <div class="container">
       <div class="row">
         <div class="col-md">
-          <h1>jquery-cropper <small class="h6">v1.0.0</small></h1>
+          <h1>jquery-cropper <small class="h6">v1.0.1</small></h1>
           <p class="lead">A jQuery plugin wrapper for Cropper.js.</p>
         </div>
         <div class="col-md">
           <div class="carbonads">
-            <script id="_carbonads_js" src="//cdn.carbonads.com/carbon.js?serve=CKYI55Q7&placement=fengyuanchengithubio" async></script>
+            <script id="_carbonads_js" src="https://cdn.carbonads.com/carbon.js?serve=CKYI55Q7&placement=fengyuanchengithubio" async></script>
           </div>
         </div>
       </div>
@@ -144,12 +144,12 @@
         <div class="btn-group">
           <button type="button" class="btn btn-primary" data-method="setDragMode" data-option="move" title="Move">
             <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="$().cropper(&quot;setDragMode&quot;, &quot;move&quot;)">
-              <span class="fa fa-arrows"></span>
+              <span class="fa fa-arrows-alt"></span>
             </span>
           </button>
           <button type="button" class="btn btn-primary" data-method="setDragMode" data-option="crop" title="Crop">
             <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="$().cropper(&quot;setDragMode&quot;, &quot;crop&quot;)">
-              <span class="fa fa-crop"></span>
+              <span class="fa fa-crop-alt"></span>
             </span>
           </button>
         </div>
@@ -193,12 +193,12 @@
         <div class="btn-group">
           <button type="button" class="btn btn-primary" data-method="rotate" data-option="-45" title="Rotate Left">
             <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="$().cropper(&quot;rotate&quot;, -45)">
-              <span class="fa fa-rotate-left"></span>
+              <span class="fa fa-undo-alt"></span>
             </span>
           </button>
           <button type="button" class="btn btn-primary" data-method="rotate" data-option="45" title="Rotate Right">
             <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="$().cropper(&quot;rotate&quot;, 45)">
-              <span class="fa fa-rotate-right"></span>
+              <span class="fa fa-redo-alt"></span>
             </span>
           </button>
         </div>
@@ -206,12 +206,12 @@
         <div class="btn-group">
           <button type="button" class="btn btn-primary" data-method="scaleX" data-option="-1" title="Flip Horizontal">
             <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="$().cropper(&quot;scaleX&quot;, -1)">
-              <span class="fa fa-arrows-h"></span>
+              <span class="fa fa-arrows-alt-h"></span>
             </span>
           </button>
           <button type="button" class="btn btn-primary" data-method="scaleY" data-option="-1" title="Flip Vertical">
             <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="$().cropper(&quot;scaleY&quot;, -1)">
-              <span class="fa fa-arrows-v"></span>
+              <span class="fa fa-arrows-alt-v"></span>
             </span>
           </button>
         </div>
@@ -224,7 +224,7 @@
           </button>
           <button type="button" class="btn btn-primary" data-method="clear" title="Clear">
             <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="$().cropper(&quot;clear&quot;)">
-              <span class="fa fa-remove"></span>
+              <span class="fa fa-times"></span>
             </span>
           </button>
         </div>
@@ -245,7 +245,7 @@
         <div class="btn-group">
           <button type="button" class="btn btn-primary" data-method="reset" title="Reset">
             <span class="docs-tooltip" data-toggle="tooltip" data-animation="false" title="$().cropper(&quot;reset&quot;)">
-              <span class="fa fa-refresh"></span>
+              <span class="fa fa-sync-alt"></span>
             </span>
           </button>
           <label class="btn btn-primary btn-upload" for="inputImage" title="Upload image file">
@@ -358,7 +358,7 @@
             Scale (-2, -1)
           </span>
         </button>
-        <textarea type="text" class="form-control" id="putData" rows="1" placeholder="Get data to here or set data with this value"></textarea>
+        <textarea type="text" class="form-control" id="putData" placeholder="Get data to here or set data with this value"></textarea>
       </div><!-- /.docs-buttons -->
 
       <div class="col-md-3 docs-toggles">
@@ -565,10 +565,10 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
-  <script src="https://fengyuanchen.github.io/js/common.js"></script>
-  <script src="https://unpkg.com/cropperjs/dist/cropper.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="https://fengyuanchen.github.io/shared/google-analytics.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/cropperjs/dist/cropper.js" crossorigin="anonymous"></script>
   <script src="js/jquery-cropper.js"></script>
   <script src="js/main.js"></script>
 </body>

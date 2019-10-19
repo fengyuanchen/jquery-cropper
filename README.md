@@ -1,6 +1,6 @@
 # jquery-cropper
 
-[![Build Status](https://travis-ci.org/fengyuanchen/jquery-cropper.svg)](https://travis-ci.org/fengyuanchen/jquery-cropper) [![Downloads](https://img.shields.io/npm/dm/jquery-cropper.svg)](https://www.npmjs.com/package/jquery-cropper) [![Version](https://img.shields.io/npm/v/jquery-cropper.svg)](https://www.npmjs.com/package/jquery-cropper)
+[![Build Status](https://img.shields.io/travis/fengyuanchen/jquery-cropper.svg)](https://travis-ci.org/fengyuanchen/jquery-cropper) [![Coverage Status](https://img.shields.io/codecov/c/github/fengyuanchen/jquery-cropper.svg)](https://codecov.io/gh/fengyuanchen/jquery-cropper) [![Downloads](https://img.shields.io/npm/dm/jquery-cropper.svg)](https://www.npmjs.com/package/jquery-cropper) [![Version](https://img.shields.io/npm/v/jquery-cropper.svg)](https://www.npmjs.com/package/jquery-cropper)
 
 > A jQuery plugin wrapper for [Cropper.js](https://github.com/fengyuanchen/cropperjs).
 
