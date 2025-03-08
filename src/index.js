@@ -27,7 +27,7 @@ if ($ && $.fn && Cropper) {
       if (typeof option === 'string') {
         const fn = cropper[option];
 
-        if (typeof fn === "function") {
+        if (typeof fn === 'function') {
           result = fn.apply(cropper, args);
 
           if (result === cropper) {
