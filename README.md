@@ -73,7 +73,7 @@ var cropper = $image.data('cropper');
 
 ## Options
 
-See the available [options](https://github.com/fengyuanchen/cropperjs/tree/v1#options) of Cropper.js.
+See the available [options](https://github.com/fengyuanchen/cropperjs/tree/v1#options) of Cropper.js 1.0.
 
 ```js
 $().cropper(options);
@@ -81,7 +81,7 @@ $().cropper(options);
 
 ## Methods
 
-See the available [methods](https://github.com/fengyuanchen/cropperjs/tree/v1#methods) of Cropper.js.
+See the available [methods](https://github.com/fengyuanchen/cropperjs/tree/v1#methods) of Cropper.js 1.0.
 
 ```js
 $().cropper('method', argument1, , argument2, ..., argumentN);
@@ -89,7 +89,7 @@ $().cropper('method', argument1, , argument2, ..., argumentN);
 
 ## Events
 
-See the available [events](https://github.com/fengyuanchen/cropperjs/tree/v1#events) of Cropper.js.
+See the available [events](https://github.com/fengyuanchen/cropperjs/tree/v1#events) of Cropper.js 1.0.
 
 ```js
 $().on('event', handler);
@@ -110,7 +110,7 @@ If you have to use other plugin with the same namespace, just call the `$.fn.cro
 
 ## Browser support
 
-It is the same as the [browser support of Cropper.js](https://github.com/fengyuanchen/cropperjs/tree/v1#browser-support). As a jQuery plugin, you also need to see the [jQuery Browser Support](https://jquery.com/browser-support/).
+It is the same as the [browser support of Cropper.js 1.0](https://github.com/fengyuanchen/cropperjs/tree/v1#browser-support). As a jQuery plugin, you also need to see the [jQuery Browser Support](https://jquery.com/browser-support/).
 
 ## Contributing
 
