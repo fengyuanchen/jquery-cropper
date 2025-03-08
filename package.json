@@ -12,7 +12,6 @@
   "scripts": {
     "build": "rollup -c",
     "clean": "del-cli dist",
-    "codecov": "cat coverage/lcov.info | codecov",
     "compress": "uglifyjs dist/jquery-cropper.js -o dist/jquery-cropper.min.js -c -m --comments /^!/",
     "lint": "eslint src test *.js --fix",
     "release": "npm run clean && npm run lint && npm run build && npm run compress && npm test",
@@ -59,7 +58,6 @@
     "@commitlint/config-conventional": "^8.3.6",
     "babel-plugin-istanbul": "^5.2.0",
     "chai": "^4.5.0",
-    "codecov": "^3.8.2",
     "create-banner": "^1.0.0",
     "cropperjs": "^1.6.2",
     "del-cli": "^3.0.1",
