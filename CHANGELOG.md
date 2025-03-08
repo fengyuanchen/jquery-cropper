@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.2 (Mar 8, 2025)
+
+- Removed `$.isFunction` for compatibility with jQuery 4.
+
 ## 1.0.1 (Oct 19, 2019)
 
 - Register as a plugin only when both the jQuery and Cropper.js are existing.

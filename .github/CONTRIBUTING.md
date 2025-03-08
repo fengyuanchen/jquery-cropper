@@ -1,16 +1,27 @@
 # Contributing to jquery-cropper
 
-> Based on [Angular's contributing guidelines](https://github.com/angular/angular/blob/master/CONTRIBUTING.md).
+> Based on [Angular's contributing guidelines](https://github.com/angular/angular/blob/main/CONTRIBUTING.md).
 
 We would love for you to contribute to jquery-cropper and help make it even better than it is today! As a contributor, here are the guidelines we would like you to follow:
 
-- [Code of Conduct](#code-of-conduct)
-- [Question or Problem](#question-or-problem)
-- [Issues and Bugs](#issues-and-bugs)
-- [Feature Requests](#feature-requests)
-- [Submission Guidelines](#submission-guidelines)
-- [Coding Rules](#coding-rules)
-- [Commit Message Guidelines](#commit-message-guidelines)
+- [Contributing to jquery-cropper](#contributing-to-jquery-cropper)
+  - [Code of Conduct](#code-of-conduct)
+  - [Question or Problem](#question-or-problem)
+  - [Issues and Bugs](#issues-and-bugs)
+  - [Feature Requests](#feature-requests)
+  - [Submission Guidelines](#submission-guidelines)
+    - [Submitting an Issue](#submitting-an-issue)
+    - [Submitting a Pull Request (PR)](#submitting-a-pull-request-pr)
+      - [After your pull request is merged](#after-your-pull-request-is-merged)
+  - [Coding Rules](#coding-rules)
+  - [Commit Message Guidelines](#commit-message-guidelines)
+    - [Commit Message Format](#commit-message-format)
+    - [Revert](#revert)
+    - [Type](#type)
+    - [Scope](#scope)
+    - [Subject](#subject)
+    - [Body](#body)
+    - [Footer](#footer)
 
 ## Code of Conduct
 
@@ -70,7 +81,7 @@ Before you submit your Pull Request (PR) consider the following guidelines:
 1. Make your changes in a new git branch:
 
     ```shell
-    git checkout -b my-fix-branch master
+    git checkout -b my-fix-branch main
     ```
 
 1. Create your patch, **including appropriate test cases**.
@@ -89,14 +100,14 @@ Before you submit your Pull Request (PR) consider the following guidelines:
     git push origin my-fix-branch
     ```
 
-1. In GitHub, send a pull request to `jquery-cropper:master`.
+1. In GitHub, send a pull request to `jquery-cropper:main`.
 1. If we suggest changes then:
     - Make the required updates.
     - Re-run the jquery-cropper test suites to ensure tests are still passing.
     - Rebase your branch and force push to your GitHub repository (this will update your Pull Request):
 
     ```shell
-    git rebase master -i
+    git rebase main -i
     git push -f
     ```
 
@@ -112,10 +123,10 @@ After your pull request is merged, you can safely delete your branch and pull th
     git push origin --delete my-fix-branch
     ```
 
-1. Check out the master branch:
+1. Check out the main branch:
 
     ```shell
-    git checkout master -f
+    git checkout main -f
     ```
 
 1. Delete the local branch:
@@ -124,10 +135,10 @@ After your pull request is merged, you can safely delete your branch and pull th
     git branch -D my-fix-branch
     ```
 
-1. Update your master with the latest upstream version:
+1. Update your main with the latest upstream version:
 
     ```shell
-    git pull --ff upstream master
+    git pull --ff upstream main
     ```
 
 ## Coding Rules
@@ -158,7 +169,7 @@ Any line of the commit message cannot be longer 100 characters! This allows the 
 
 The footer should contain a [closing reference to an issue](https://help.github.com/articles/closing-issues-via-commit-messages/) if any.
 
-Here are some [samples](https://github.com/fengyuanchen/lifecycle.js/commits/master).
+Here are some [samples](https://github.com/fengyuanchen/jquery-cropper/commits/main).
 
 ### Revert
 
