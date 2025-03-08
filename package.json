@@ -11,11 +11,11 @@
   ],
   "scripts": {
     "build": "rollup -c",
-    "clear": "del-cli dist",
+    "clean": "del-cli dist",
     "codecov": "cat coverage/lcov.info | codecov",
     "compress": "uglifyjs dist/jquery-cropper.js -o dist/jquery-cropper.min.js -c -m --comments /^!/",
     "lint": "eslint src test *.js --fix",
-    "release": "npm run clear && npm run lint && npm run build && npm run compress && npm test",
+    "release": "npm run clean && npm run lint && npm run build && npm run compress && npm test",
     "start": "rollup -c -m -w",
     "test": "karma start"
   },
@@ -92,7 +92,7 @@
   "browserslist": [
     "last 2 versions",
     "> 1%",
-    "not ie <= 8"
+    "ie >= 9"
   ],
   "commitlint": {
     "extends": [
