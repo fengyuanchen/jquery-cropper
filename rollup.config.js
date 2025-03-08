@@ -3,7 +3,7 @@ const babel = require('rollup-plugin-babel');
 const commonjs = require('rollup-plugin-commonjs');
 const nodeResolve = require('rollup-plugin-node-resolve');
 const createBanner = require('create-banner');
-const pkg = require('./package');
+const pkg = require('./package.json');
 
 const banner = createBanner({
   data: {
